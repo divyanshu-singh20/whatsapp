@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/chats';
+const API_URL = 'https://whatsapp-oymf.onrender.com/api/chats';
 
 export const getChats = async () => {
   const response = await axios.get(API_URL);

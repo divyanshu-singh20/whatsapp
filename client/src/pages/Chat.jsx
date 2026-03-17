@@ -17,7 +17,7 @@ const Chat = () => {
   const { user } = useAuth();
 
   useEffect(() => {
-    socketRef.current = io('http://localhost:5000');
+    socketRef.current = io('https://whatsapp-oymf.onrender.com');
     socketRef.current.emit('join', user.id);
     socketRef.current.emit('joinChat', chatId);
 

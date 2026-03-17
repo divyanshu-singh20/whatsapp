@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/calls';
+const API_URL = 'https://whatsapp-oymf.onrender.com/api/calls';
 
 export const createCall = async (callData) => {
   const response = await axios.post(API_URL, callData);

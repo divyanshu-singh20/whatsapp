@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/messages';
+const API_URL = 'https://whatsapp-oymf.onrender.com/api/messages';
 
 export const getMessages = async (chatId) => {
   const response = await axios.get(`${API_URL}/${chatId}`);
