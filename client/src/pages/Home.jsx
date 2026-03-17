@@ -63,7 +63,7 @@ const Home = () => {
             className="flex items-center p-4 hover:bg-gray-50 border-b border-gray-200"
           >
             <img
-              src={otherUser?.profilePic || '/default-avatar.png'}
+              src={otherUser?.profilePic || '/default-avatar.svg'}
               alt={otherUser?.name}
               className="w-12 h-12 rounded-full mr-3"
             />
@@ -114,7 +114,7 @@ const Home = () => {
             className="flex items-center p-3 mb-2 bg-white rounded-lg shadow cursor-pointer hover:shadow-md"
           >
             <img
-              src={status.userId.profilePic || '/default-avatar.png'}
+              src={status.userId.profilePic || '/default-avatar.svg'}
               alt={status.userId.name}
               className="w-12 h-12 rounded-full mr-3 border-2 border-green-500"
             />
@@ -138,7 +138,7 @@ const Home = () => {
         return (
           <div key={call._id} className="flex items-center p-4 hover:bg-gray-50 border-b border-gray-200">
             <img
-              src={otherUser?.profilePic || '/default-avatar.png'}
+              src={otherUser?.profilePic || '/default-avatar.svg'}
               alt={otherUser?.name}
               className="w-12 h-12 rounded-full mr-3"
             />

@@ -52,7 +52,7 @@ const StatusView = () => {
           </Link>
           <div className="flex items-center">
             <img
-              src={currentStatus.userId.profilePic || '/default-avatar.png'}
+              src={currentStatus.userId.profilePic || '/default-avatar.svg'}
               alt={currentStatus.userId.name}
               className="w-8 h-8 rounded-full mr-2"
             />

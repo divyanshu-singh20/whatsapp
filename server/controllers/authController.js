@@ -5,9 +5,15 @@ const jwt = require('jsonwebtoken');
 exports.signup = async (req, res) => {
   try {
     const { name, email, password } = req.body;
+    const trimmedName = name?.trim();
+    const normalizedEmail = email?.trim().toLowerCase();
+
+    if (!trimmedName || !normalizedEmail || !password) {
+      return res.status(400).json({ message: 'Name, email, and password are required' });
+    }
 
     // Check if user exists
-    const existingUser = await User.findOne({ email });
+    const existingUser = await User.findOne({ email: normalizedEmail });
     if (existingUser) {
       return res.status(400).json({ message: 'User already exists' });
     }
@@ -17,8 +23,8 @@ exports.signup = async (req, res) => {
 
     // Create user
     const user = new User({
-      name,
-      email,
+      name: trimmedName,
+      email: normalizedEmail,
       password: hashedPassword,
     });
 

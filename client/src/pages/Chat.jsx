@@ -96,7 +96,7 @@ const Chat = () => {
             <ArrowLeft size={24} />
           </Link>
           <img
-            src="/default-avatar.png"
+            src="/default-avatar.svg"
             alt="User"
             className="w-10 h-10 rounded-full mr-3"
           />

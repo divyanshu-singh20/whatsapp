@@ -98,7 +98,7 @@ const Search = () => {
               >
                 <div className="flex items-center">
                   <img
-                    src={user.profilePic || '/default-avatar.png'}
+                    src={user.profilePic || '/default-avatar.svg'}
                     alt={user.name}
                     className="w-12 h-12 rounded-full mr-3"
                   />

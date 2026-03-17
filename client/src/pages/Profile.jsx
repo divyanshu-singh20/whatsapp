@@ -1,3 +1,5 @@
+
+
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { updateUser } from '../api/users';
@@ -114,7 +116,7 @@ const Profile = () => {
           <div className="flex flex-col items-center">
             <div className="relative mb-4">
               <img
-                src={formData.profilePic || '/default-avatar.png'}
+                src={formData.profilePic || '/default-avatar.svg'}
                 alt="Profile"
                 className="w-24 h-24 rounded-full border-4 border-white shadow-lg"
               />
